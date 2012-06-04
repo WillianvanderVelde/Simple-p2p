@@ -2,7 +2,14 @@
 Simple single threaded peer for a peer2peer network
 
 Made for fun and to gain some experince with p2p networks
-
+    
+Todo's:
+    - Now each peer registers itself too all other peers.
+      This wil work until millions of peers want to join our network, there are some nice algoritms to do efficient routing
+    - Create a thread that listens and a threads that can send
+    - More robust sockets, or even asynchronous connections (like twisted)
+    - Updating routing table periodically, for example to check peers are still up (and responding) 
+    - Leave logic
 """
 
 import sys 
